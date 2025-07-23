@@ -1,0 +1,13 @@
+@media (min-width: 700px) {
+  .album {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  main {
+    max-width: 1200px;
+  }
+
+  figure img {
+    aspect-ratio: 4 / 3;
+  }
+}
