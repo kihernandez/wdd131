@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a page about France, showcasing country data and weather information.">
+    <meta name="author" content="Kevin Hernandez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Country Page</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>France</h1>
+    </header>
+    <main>
+        <div class="space"></div>
+        <section class="hero-section">
+            <picture>
+                <source srcset="images/paris-large.webp" media="(min-width: 900px)">
+                <source srcset="images/paris-medium.webp" media="(min-width: 550px)">
+                <img src="images/paris-small.webp" alt="Paris cityscape" class="hero-img" width="300" height="200">
+            </picture>
+
+        </section>
+        <section class="info-section">
+            <div class="country-section">
+                <div class="country-title">
+                    <h2>Country Data</h2>
+                </div>
+                <div class="country-data">
+                    <ul>
+                        <li><strong>Area:</strong> <span id="area">633,186 sq km²</span></li>
+                        <li><strong>Population:</strong> <span id="population">67 million</span></li>
+                        <li><strong>Capital City:</strong> <span id="capital">Paris</span></li>
+                        <li><strong>Language:</strong> <span id="language">French</span></li>
+                        <li><strong>Currency:</strong> <span id="currency">Euro (EUR)</span></li>
+                        <li><strong>Time Zone:</strong> <span id="timezone">CET (UTC+1)</span></li>
+                        <li><strong>Calling Code:</strong> <span id="calling-code">+33</span></li>
+                        <li><strong>Internet TLD:</strong> <span id="tld">.fr</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="weather-section">
+                <div class="weather-title">
+                    <h2>Weather</h2>
+                    <img src="images/weather.svg" alt="Weather icon" class="weather-icon"></img>
+                </div>
+                <div class="weather-data">
+                    <ul class="weather-details">
+                        <li><strong>Temperature:</strong> <span id="conditions">18°C</span></li>
+                        <li><strong>Conditions:</strong> <span id="conditions">Partly Cloudy</span></li>
+                        <li><strong>Wind:</strong> <span id="wind">7</span> km/h</li>
+                        <li><strong>Wind Chill:</strong> <span id="windchill"></span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="space2"></div>
+    <footer>
+        <p>© <span id="currentYear"></span> Kevin Hernandez, United States</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
