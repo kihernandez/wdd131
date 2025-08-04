@@ -23,7 +23,7 @@ const temples = [
     dedicated: "2005, August, 7",
     area: 11500,
     imageUrl:
-    "/images/aba.jpg"
+    "./images/aba.jpg"
   },
   {
     templeName: "Manti Utah",
@@ -31,7 +31,7 @@ const temples = [
     dedicated: "1888, May, 21",
     area: 74792,
     imageUrl:
-    "/images/manti.jpg"
+    "./images/manti.jpg"
   },
   {
     templeName: "Payson Utah",
@@ -39,7 +39,7 @@ const temples = [
     dedicated: "2015, June, 7",
     area: 96630,
     imageUrl:
-    "/images/payson.jpg"
+    "./images/payson.jpg"
   },
   {
     templeName: "Yigo Guam",
@@ -47,7 +47,7 @@ const temples = [
     dedicated: "2020, May, 2",
     area: 6861,
     imageUrl:
-    "/images/yigo.jpg"
+    "./images/yigo.jpg"
   },
   {
     templeName: "Washington D.C.",
@@ -55,7 +55,7 @@ const temples = [
     dedicated: "1974, November, 19",
     area: 156558,
     imageUrl:
-    "/images/washington-dc.jpg"
+    "./images/washington-dc.jpg"
   },
   {
     templeName: "Lima Perú",
@@ -63,7 +63,7 @@ const temples = [
     dedicated: "1986, January, 10",
     area: 9600,
     imageUrl:
-    "/images/lima-peru.jpg"
+    "./images/lima-peru.jpg"
   },
   {
     templeName: "Mexico City Mexico",
@@ -71,7 +71,7 @@ const temples = [
     dedicated: "1983, December, 2",
     area: 116642,
     imageUrl:
-    "/images/mexico-city.webp"
+    "./images/mexico-city.webp"
   },
   {
     templeName: "Rome Italy",
@@ -79,7 +79,7 @@ const temples = [
     dedicated: "2019, March, 10",
     area: 41010,
     imageUrl:
-    "/images/rome.webp"
+    "./images/rome.webp"
   },
   {
     templeName: "Bangkok Thailand",
@@ -87,7 +87,7 @@ const temples = [
     dedicated: "2023, October, 22",
     area: 44000,
     imageUrl:
-    "/images/bangkok.jpg"
+    "./images/bangkok.jpg"
   },
   {
     templeName: "Helena Montana",
@@ -95,7 +95,7 @@ const temples = [
     dedicated: "2023, June, 18",
     area: 10000,
     imageUrl:
-    "/images/helena-montana.jpg"
+    "./images/helena-montana.jpg"
   }
 ];
 
