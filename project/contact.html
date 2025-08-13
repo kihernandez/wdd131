@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="This is the contact page for NatureSafe, where users can find information on how to get in touch with us, upcoming events, and our locations.">
+    <meta name="author" content="Kevin Hernandez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <title>NatureSafe Contact Page</title>
+    <link rel="stylesheet" href="styles/contact.css">
+    <script src="scripts/contact.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <img src="images/logo.png" alt="A logo of the site" width="120" height="110" loading="lazy">
+            <div class="header-titles">
+                <span class="site-name">NatureSafe</span>
+            </div>
+        </div>
+        <button id="burger" class="burger" aria-label="Menu" aria-expanded="false">☰</button>
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="species.html">Species</a></li>
+                    <li><a href="contact.html" class="active">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-info">
+            <div class="contact-content">
+                <div class="contact-intro">
+                    <h1>Contact Us </h1>
+                    <p>We'd love to hear from you! Whether you have questions, want to volunteer, or just want to learn more about our conservation efforts, feel free to reach out.</p>
+                    <p><strong>Email: </strong>info@naturesafe.org</p>
+                    <p><strong>Phone: </strong>(883) 465-6400</p>
+
+                </div>
+                <div class="events">
+                    <h2>Upcoming Events</h2>
+                    <p>Join us for our upcoming events to support wildlife conservation and community engagement.</p>
+                    <ul>
+                        <li><strong>Wildlife Awareness Day:</strong> March 15, 2026</li>
+                        <li><strong>Adoption Fair:</strong> April 20, 2026</li>
+                        <li><strong>Fundraising Gala:</strong> May 10, 2026</li>
+                        <li><strong>Nature Walk:</strong> June 5, 2026</li>
+                        <li><strong>Beach Cleanup:</strong> July 12, 2026</li>
+                        <li><strong>Wildlife Photography Contest:</strong> August 25, 2025</li>
+                        <li><strong>Volunteer Training:</strong> September 30, 2025</li>
+                        <li><strong>Annual Conservation Summit:</strong> October 15, 2025</li>
+                        <li><strong>Community Picnic:</strong> November 20, 2025</li>
+                        <li><strong>Holiday Fundraiser:</strong> December 5, 2025</li>          
+                        <li><strong>Wildlife Education Workshop:</strong> January 10, 2026</li>
+
+                    </ul>
+                </div>
+                <div class="locations">
+                    <h2>Our Locations</h2>
+                    <p>We have multiple locations to serve you better. Visit us at:</p>
+                    <ul>
+                        <li><strong>Main Office:</strong> Dostane Sokak No: 13, Tuzla, Istanbul 34956 Turkey</li>
+                        <li><strong>Wildlife Sanctuary:</strong> NatureSafe Wildlife Sanctuary, Tuzla, Istanbul</li>
+                        <li><strong>Community Center:</strong> NatureSafe Community Center, Tuzla, Istanbul</li>
+                        <li><strong>Research Facility:</strong> NatureSafe Research Facility, Tuzla, Istanbul</li>
+                        <li><strong>Volunteer Hub:</strong> NatureSafe Volunteer Hub, Tuzla,
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="form-container">
+                <div class="contact-form">
+                    <form method="get" action="thankyou.html">
+                        <h2>Contact - Volunteer Form</h2>
+
+                        <label for="firstName">First Name:*</label><br>
+                        <input type="text" id="firstName" name="firstName" required><br><br>
+
+                        <label for="lastName">Last Name:*</label><br>
+                        <input type="text" id="lastName" name="lastName" required><br><br>
+
+                        <label for="email">Email:*</label><br>
+                        <input type="email" id="email" name="email" required><br><br>
+
+                        <label for="phone">Phone:*</label><br>
+                        <input type="tel" id="phone" name="phone" required><br><br>
+
+                        <label>Are you interested in volunteering?</label><br>
+                        <input type="radio" id="volunteerYes" name="volunteer" value="Yes">
+                        <label for="volunteerYes">Yes</label><br>
+                        <input type="radio" id="volunteerNo" name="volunteer" value="No">
+                        <label for="volunteerNo">No</label><br><br>
+
+                        <label>Would you like to donate to the wildlife conservation ?</label><br>
+                        <input type="radio" id="donateYes" name="donate" value="Yes">
+                        <label for="donateYes">Yes</label><br>
+                        <input type="radio" id="donateNo" name="donate" value="No">
+                        <label for="donateNo">No</label><br><br>
+
+                        <label for="donationAmount">If yes, how much would you like to donate? ($):</label><br>
+                        <input type="text" id="donationAmount" name="donationAmount"><br><br>
+
+                        <label for="comments">Questions or Comments:</label><br>
+                        <textarea id="comments" name="comments" rows="5" cols="40"></textarea><br><br>
+
+                        <input type="submit" value="Submit Information">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="message">
+            <div id="last-visit-message" class="visit-message"></div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <h3>NatureSafe</h3>
+            <p>Dostane Sokak No: 13</p>
+            <p>Tuzla, Istanbul 34956 Turkey</p>
+            <p>info@naturesafe.org</p>
+            <p>(883) 465-6400</p>
+        </div>
+        <div>
+            <h3>Hours of Operation</h3>
+            <p>Open</p>
+            <p>Mon - Fri</p>
+            <p>8:00 AM - 5:00 PM</p>
+            <p>Saturday - 10:00 AM - 2:00 PM</p>
+            <p>Closed Sunday</p>
+        </div>
+        <div class="sociallinks">
+
+            <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook" width="30"
+                    height="30"></a>
+            <a href="https://twitter.com/"><img src="images/twitter.png" alt="Twitter" width="30" height="30"></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram" width="30"
+                    height="30"></a>
+        </div>
+        <div>
+            <p>Kevin Hernandez</p>
+            <p>&copy;<span id="currentYear"></span> Kevin Hernandez, United States All rights reserved.</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

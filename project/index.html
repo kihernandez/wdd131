@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="NatureSafe is a wildlife conservation website dedicated to raising awareness about endangered species and promoting conservation efforts.">
+    <meta name="author" content="Kevin Hernandez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <title>NatureSafe Home Page</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <img src="images/logo.png" alt="A logo of the site" width="120" height="110">
+            <div class="header-titles">
+                <span class="site-name">NatureSafe</span>
+            </div>
+        </div>
+        <button id="burger" class="burger" aria-label="Menu" aria-expanded="false">☰</button>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="species.html">Species</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/hero.webp" alt="Hero Image" class="hero-image">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <p><strong>Protecting Wildlife. Preserving Tomorrow.</strong></p>
+                <a href="contact.html" class="cta-button">Join the Mission</a>
+            </div>
+        </section>
+        <section class="introduction">
+            <div class="intro-message">
+                <h1>Welcome to NatureSafe !</h1>
+                <P> We're dedicated to protecting Earth's most vulnerable wildlife and preserving the ecosystems they
+                    depend
+                    on.
+                    Explore endangered species, learn how you can help, and become part of a global movement for
+                    conservation.</P>
+            </div>
+            <div class="intro-image">
+                <img src="images/small-bird.webp" alt="small bird" loading="lazy">
+            </div>
+        </section>
+        <section class="mission">
+            <div class="mission-message">
+                <h2>Our Mission</h2>
+                <p>
+                    At Naturesafe, our mission is simple: to safeguard biodiversity through education, direct action,
+                    and
+                    habitat protection. We partner with communities, scientists, and conservationists to ensure that
+                    future
+                    generations inherit a thriving, wild planet.
+                </p>
+                <p><strong>Our Initiatives:</strong></p>
+            </div>
+            <div class="mission-goals">
+                <div class="goal">
+                    <h3>Carbon Capture</h3>
+                    <img src="images/carbon-capture.webp" alt="Carbon Capture Icon" width="50" height="50">
+                    <p>Rewilding isn’t just good for animals—it’s a powerful tool against climate change. Learn how
+                        restoring forests, wetlands, and grasslands helps absorb carbon, cool the planet, and create
+                        thriving habitats for wildlife.</p>
+                </div>
+                <div class="goal">
+                    <h3>AI Meets Ecology</h3>
+                    <img src="images/ai-conservation.webp" alt="AI Conservation Icon" width="50" height="50">
+                    <p>AI is changing the game for conservation science. From analyzing animal calls to predicting
+                        migration patterns and spotting poachers via drone footage, machine learning is helping
+                        researchers work faster, smarter, and more accurately.</p>
+                </div>
+                <div class="goal">
+                    <h3>Educating for the Wild</h3>
+                    <img src="images/education.webp" alt="Education Icon" width="50" height="50">
+                    <p>Knowledge is the first step toward action. From school programs to virtual wildlife labs,
+                        education empowers people to protect the planet. Discover how conservation education is
+                        inspiring young minds, shaping policy, and creating lifelong advocates for nature.</p>
+                </div>
+                <div class="goal">
+                    <h3>Community-Led Conservation</h3>
+                    <img src="images/community.webp" alt="Community Icon" width="50" height="50">
+                    <p>Local communities are the heart of conservation. Discover how indigenous knowledge and grassroots
+                        action are transforming landscapes and saving species.</p>
+                </div>
+        </section>
+        <section class="spotlights">
+            <div class="features">
+                <h2>Learn</h2>
+                <div class="animal-cards"></div>
+            </div>
+        </section>
+        <section class="message">
+            <div id="last-visit-message" class="visit-message"></div>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <h3>NatureSafe</h3>
+            <p>Dostane Sokak No: 13</p>
+            <p>Tuzla, Istanbul 34956 Turkey</p>
+            <p>info@naturesafe.org</p>
+            <p>(883) 465-6400</p>
+        </div>
+        <div>
+            <h3>Hours of Operation</h3>
+            <p>Open</p>
+            <p>Mon - Fri</p>
+            <p>8:00 AM - 5:00 PM</p>
+            <p>Saturday - 10:00 AM - 2:00 PM</p>
+            <p>Closed Sunday</p>
+        </div>
+        <div class="sociallinks">
+
+            <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook" width="30"
+                    height="30"></a>
+            <a href="https://twitter.com/"><img src="images/twitter.png" alt="Twitter" width="30" height="30"></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram" width="30"
+                    height="30"></a>
+        </div>
+        <div>
+            <p>Kevin Hernandez</p>
+            <p>&copy;<span id="currentYear"></span>  Kevin Hernandez, United States All rights reserved.</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
